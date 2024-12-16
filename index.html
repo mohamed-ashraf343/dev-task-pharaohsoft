@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev-Test</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon-96x96.png" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!--  CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top custom-navbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/light-logo.png" alt="Logo" class="logo-img" />
+            </a>
+
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler openbtn" type="button" onclick="navToggle()">☰</button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Services-1</a></li>
+                            <li><a class="dropdown-item" href="#">Services-2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Case Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Languages</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">AR</a></li>
+                            <li><a class="dropdown-item" href="#">EN</a></li>
+                        </ul>
+                    </li>
+                    <!-- Search Icon -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" aria-label="Search">
+                            <i class="bi bi-search"></i> <!-- Bootstrap Icon -->
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Start Slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+                <div class="parent-slider-main">
+                    <div class="slider-content">
+                        <div class="container container-slider-left">
+                            <div class="slider-title">
+                                <h6>Offering technology-led digital transformation services </h6>
+                            </div>
+                            <div class="slider-sub">
+                                <p>
+                                    We assist businesses in transforming
+                                    their data into useful
+                                    and actionable information. From data
+                                    strategy to
+                                    implementation, our business
+                                    intelligence team will help you
+                                    make sense of your data and use it to
+                                    solve complex business
+                                    challenges
+                                </p>
+                            </div>
+                            <div class="bt-1">
+                                <!-- <button class="btn btn-col btn-lg">Let’s
+                                    Discuss</button> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="home-bg-1 bg-home-setting">
+                        <div class="slider-mask"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Slide -->
+            <div class="carousel-item">
+                <div class="parent-slider-main">
+                    <div class="slider-content">
+                        <div class="container container-slider-left">
+                            <div class="slider-title">
+                                <h6>Transforming your business with
+                                    data</h6>
+                            </div>
+                            <div class="slider-sub">
+                                <p>
+                                    We assist businesses in transforming
+                                    their data into useful
+                                    and actionable information. From data
+                                    strategy to
+                                    implementation, our business
+                                    intelligence team will help you
+                                    make sense of your data and use it to
+                                    solve complex business
+                                    challenges
+                                </p>
+                            </div>
+                            <div class="bt-1">
+                                <button type="button" class="btn btn-clor  " data-bs-toggle="button" autocomplete="off"
+                                    aria-pressed="true">Let’s Discuss</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-bg-2 bg-home-setting">
+                        <div class="slider-mask"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Slide -->
+            <div class="carousel-item">
+                <div class="parent-slider-main">
+                    <div class="slider-content">
+                        <div class="container container-slider-left">
+                            <div class="slider-title">
+                                <h6>Transforming your business with
+                                    data</h6>
+                            </div>
+                            <div class="slider-sub">
+                                <p>
+                                    We assist businesses in transforming
+                                    their data into useful
+                                    and actionable information. From data
+                                    strategy to
+                                    implementation, our business
+                                    intelligence team will help you
+                                    make sense of your data and use it to
+                                    solve complex business
+                                    challenges
+                                </p>
+                            </div>
+                            <div class="bt-1">
+                                <button type="button" class="btn btn-clor  " data-bs-toggle="button" autocomplete="off"
+                                    aria-pressed="true">Let’s Discuss</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-bg-3 bg-home-setting">
+                        <div class="slider-mask"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider -->
+    <!-- Start Services -->
+    <section id="our-services" class="py-5 bg-gray">
+        <div class="container text-center">
+            <div class="general-head-title ">
+                <h5 class="section-title">Our Services</h5>
+            </div>
+            <div class="general-head-des">
+                <p class="section-description">
+                    With over 89% of our clientele consistently choosing to rely on us, we transform challenges into
+                    triumphs with innovative solutions tailored to your needs.
+                </p>
+            </div>
+        </div>
+        <div class="containeres">
+            <div class="card active">
+                <img src="assets/images/new/serv.png" alt="Service Image">
+                <div class="card__head">Application RE-Engineering</div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/new/ser-2.png" alt="Service Image">
+                <div class="card__head">Digital Transformation</div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/new/serv-3.png" alt="Service Image">
+                <div class="card__head">Cyber Security</div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/new/serv-4.png" alt="Service Image">
+                <div class="card__head">Business Intelligence </div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/new/ser-5.png" alt="Service Image">
+                <div class="card__head">3d Ecommerce</div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/new/ser-6.png" alt="Service Image">
+                <div class="card__head">Product Design</div>
+                <div class="titel">
+                    <p class="titel-1">Step into a new era of online shopping with DimensionalMarket. Explore products
+                        in immersive 3D, bringing a new level of engagement to your e-commerce journey. s of engagement
+                        to your e-commerce journey.</p>
+                </div>
+            </div>
+
+            <!-- إضافة الأيقونات للتنقل -->
+            <div class="arrow-buttons">
+                <button class="arrow-button prev">&#8592;</button>
+                <button class="arrow-button next">&#8594;</button>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- End Services -->
+    <!-- Start Clint -->
+    <div class="clients-slider-section">
+        <h2 class="clients-title">Our Clients</h2>
+        <div class="clint-carousel-indicators">
+            <button type="button" class="indicator active" aria-label="Slide 1" data-slide="0"></button>
+            <button type="button" class="indicator" aria-label="Slide 2" data-slide="1"></button>
+            <button type="button" class="indicator" aria-label="Slide 3" data-slide="2"></button>
+        </div>
+        <div class="clients-slider">
+            <div class="row">
+                <div class="container-fluid">
+                    <img class="cli-img" src="assets/images/new/cl-1.png" alt="Client 1">
+                    <img class="cli-img" src="assets/images/new/cl-2.png" alt="Client 2">
+                    <img class="cli-img" src="assets/images/new/cl-3.png" alt="Client 3">
+                    <img class="cli-img" src="assets/images/new/cl-4.png" alt="Client 4">
+                    <img class="cli-img" src="assets/images/new/cl-5.png" alt="Microsoft">
+                    <img class="cli-img" src="assets/images/new/cl-6.png" alt="Vodafone">
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Clint -->
+    <!-- Start Insights -->
+    <section class="insights-section">
+        <div class="container">
+            <h2 class="section-title">Insights</h2>
+            <!-- الصف الأول -->
+            <div class="container parent-content-insights pt-1">
+                <!-- start insights post content-->
+                <div class="single-insight-container-l">
+                    <img src="assets/images/new/ser-6.png" style="width:100%;height:100%;" alt="">
+                    <div class="insight-mask">
+
+                        <div class="insight-box-main">
+                            <div class="insight-content">
+                                <div class="align-self-end">
+                                    <button href="#" class="insight-btn-l">Digital Transformation</button>
+                                </div>
+                                <div class="insight-title">
+                                    <p class="insight-title">Why Custom Software Development Is The Right Choice For
+                                        Your Business</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="single-insight-container-r">
+
+                    <div class="general-insight-r">
+
+                        <div class="general-insight-img-r ">
+                            <img src="assets/images/new/serv-3.png" style="width:100%;height:100%;"
+                                alt="Unveiling the Top 10 Reasons Why Mobile Apps Are Crucial for Business Growth">
+                            <div class="new-mask-1"></div>
+                        </div>
+
+                        <div class="general-insight-cont-r">
+                            <div class="align-self-end">
+                                <button href="#" class="insight-btn-l">Digital Transformation</button>
+                            </div>
+
+                            <div class="insight-title">
+                                <p class="insight-title">Why Custom Software Development Is The Right Choice For Your
+                                    Business</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="general-insight-r">
+
+                        <div class="general-insight-cont-r">
+                            <div class="align-self-end">
+                                <button href="#" class="insight-btn-l">Digital Transformation</button>
+                            </div>
+                            <div class="insight-title">
+                                <p class="insight-title">Why Custom Software Development Is The Right Choice For Your
+                                    Business</p>
+                            </div>
+                        </div>
+
+                        <div class="general-insight-img-r">
+                            <img src="https://pharaohsoft.com/wp-content/uploads/2024/04/software-maintenance-450-jpeg.webp"
+                                style="width:100%;height:100%;"
+                                alt="Software Maintenance Services: Navigating In-house, Hybrid, and Outsourced Strategies">
+                            <div class="new-mask-2"></div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- end insights post content-->
+
+            </div>
+
+            <!-- الصف الثاني -->
+
+
+        </div>
+    </section>
+    <!-- Start Insights -->
+    <!-- Start Our Clients Speak -->
+    <section class="bg-gray">
+        <div class="general-head-container pt-0">
+            <div class="general-head-title">
+                <h5>Our clients speak</h5>
+            </div>
+            <div id="kkk" class="container carousel carousel-dark slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner  parent-slider-testimonial">
+
+                    <!-- slide 1 -->
+                    <div class="carousel-item bg-gray h-100 active" data-bs-interval="5000">
+                        <div class="testimonial-main">
+                            <div class="testimonial-slide-context">
+
+                                <!-- slide description -->
+                                <div class="testimonial-single-slide">
+                                    <p>Working with Pharaoh Soft was great, very patient and went beyond to get the job
+                                        done. They were very prompt in responding to my queries. Working with them was
+                                        headache free...they knew exactly what I needed for my website; implemented it
+                                        exactly how I imagined it and when I asked for any amendments; it was always
+                                        done in no time. Thanks for doing a great job!</p>
+                                </div>
+
+                                <!-- slide identity (image - name - position) -->
+                                <div class="testimonial-single-slide-identity">
+                                    <div class="testimonial-single-slide-img">
+                                        <img src="assets/images/new/mohamed-abdelkader 1.png"
+                                            alt="Mohamed Abdelkader - Founder and CEO" width="100%" height="100%">
+                                    </div>
+                                    <div>
+                                        <p class="testimonial-single-slide-name">Mohamed Abdelkader</p>
+                                        <p class="testimonial-single-slide-position">Founder and CEO</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-slide-img">
+                                <img src="assets/images/new/serv-4.png" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="carousel-item bg-gray h-100 " data-bs-interval="5000">
+                        <div class="testimonial-main">
+                            <div class="testimonial-slide-context">
+
+                                <!-- slide description -->
+                                <div class="testimonial-single-slide">
+                                    <p>Working with Pharaoh Soft was great, very patient and went beyond to get the job
+                                        done. They were very prompt in responding to my queries. Working with them was
+                                        headache free...they knew exactly what I needed for my website; implemented it
+                                        exactly how I imagined it and when I asked for any amendments; it was always
+                                        done in no time. Thanks for doing a great job!</p>
+                                </div>
+
+                                <!-- slide identity (image - name - position) -->
+                                <div class="testimonial-single-slide-identity">
+                                    <div class="testimonial-single-slide-img">
+                                        <img src="assets/images/new/mohamed-abdelkader 1.png"
+                                            alt="Mohamed Abdelkader - Founder and CEO" width="100%" height="100%">
+                                    </div>
+                                    <div>
+                                        <p class="testimonial-single-slide-name">Mohamed Abdelkader</p>
+                                        <p class="testimonial-single-slide-position">Founder and CEO</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="testimonial-slide-img">
+                                <img src="assets/images/new/serv-4.png" width="100%" height="100%">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+
+
+                </div>
+
+                <div class="carousel-indicators testimonial-indicators">
+                    <button type="button" data-bs-target="#kkk" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#kkk" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+                        aria-current="true"></button>
+                    <button type="button" data-bs-target="#kkk" data-bs-slide-to="2" aria-label="Slide 3"
+                        class=""></button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!-- End Our Clients Speak -->
+    <!-- Start Partiners -->
+    <div class="clients-slider-section bg-light">
+        <h2 class="clients-title-black">Our Partiners</h2>
+
+        <div class="clients-slider pt-3">
+            <div class="slider-track">
+                <img src="assets/images/new/part-1.png" alt="Client 1">
+                <img src="assets/images/new/part-2.png" alt="Client 2">
+                <img src="assets/images/new/part-1.png" alt="Client 3">
+                <img src="assets/images/new/part-3.png" alt="Client 4">
+                <img src="assets/images/new/part-4.png" alt="Microsoft">
+                <img src="assets/images/new/part-5.png" alt="Vodafone">
+                <img src="assets/images/new/part-6.png" alt="Client 1">
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Partiners -->
+    <!-- Start Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <div class="explore-line"></div>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <div class="explore-line"></div>
+                    <ul>
+                        <li><a href="#">Product Design</a></li>
+                        <li><a href="#">Digital Transformation</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                        <li><a href="#">3D eCommerce</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="#">PoC Development</a></li>
+                        <li><a href="#">Enterprise Applications</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Application Reengineering</a></li>
+                        <li><a href="#">Cloud Migration</a></li>
+                        <li><a href="#">Quality Assurance</a></li>
+                        <li><a href="#">Maintenance & Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <div class="explore-line"></div>
+                    <div class="service-links">
+                        <div>
+                            <img src="assets/images/new/ser-6.png" alt="Service 1">
+                            <a href="#">Augmented Working: How AI Is Enhancing Workplace Productivity</a>
+                        </div>
+                        <div>
+                            <img src="assets/images/new/serv-3.png" alt="Service 2">
+                            <a href="#">Harnessing AI: Revolutionizing Legal Services In The Digital Age</a>
+                        </div>
+                        <div>
+                            <img src="assets/images/new/ser-2.png" alt="Service 3">
+                            <a href="#">Why Custom Software Development Is The Right Choice For Your Business</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Pharaoh Soft</h3>
+                    <p class="ph">ARCHITECTING DIGITAL EXPERIENCE!</p>
+                    <a href="#" class="social-link"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+                    <h3 class="adres-f">address</h3>
+                    <address>
+                        Heliopolis<br>
+                        37 Baghdad Street, Heliopolis, Cairo<br>
+                    </address>
+                    <a style="color: #fff;  " href="#">View more locations</a>
+
+                    <div class="certifications ">
+                        <img src="assets/images/new/f-1.png" alt="ISO 1">
+                        <img src="assets/images/new/f-2.png" alt="ISO 2">
+                        <img src="assets/images/new/f-3.png" alt="Clutch">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content-2">
+
+                <div class="footer-copyright">
+                    <p>© 2014 <a href="#" style="color:white;">Pharaoh Soft Ltd</a>.
+                        All
+                        Rights Reserved.</p>
+                </div>
+
+                <div class="footer-terms-privacy">
+                    <p>
+                        <a href="#">Terms of use</a> | <a href="#">Privacy
+                            Policy</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- مكتبة jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.2.0/jquery.waitforimages.min.js"></script>
+
+    <!-- مكتبة Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- السكربت الخاص بالمشروع -->
+    <script src="assets/js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
